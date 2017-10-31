@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// Color definitions
+// -----------------------------------------------------------------------------
+
+.background {
+
+		&-grey {
+			background-color: #ccc;
+			color:white;
+		}
+
+}
+
+.color-swatch {
+	display:block;
+	width:100px;
+	height:100px;
+}
+
+.color-definitions {
+	display:flex;
+	flex-wrap:wrap;
+
+	& > *:not(:last-child) {
+		margin-right:1rem;
+	}
+}

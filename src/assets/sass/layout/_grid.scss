@@ -1,0 +1,30 @@
+.grid-container {
+	position:relative;	
+	margin:0 auto;
+	padding:0 1rem;
+	overflow:hidden;
+	max-width: 1200px;
+}
+
+.grid-container--wide {
+	max-width:1400px;
+	@media (min-width:48em) {
+		display:flex;
+		justify-content:center;
+	}
+}
+
+
+// only for prototyping @todo: remove
+.protobox {
+	height:100vw;
+	max-height:600px;
+
+	@media (min-width:40em) {
+		height:50vw;
+	}
+
+	display:flex;
+	align-items:center;
+	padding-bottom:5%;
+}

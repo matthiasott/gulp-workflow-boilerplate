@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-y: auto;
+}
+
+html.no-scroll, body.no-scroll {
+  height:100%;
+  overflow:hidden;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: #00f;
+  text-decoration: none;
+
+  @include on-event {
+    color: #00b;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: #673ab7;
+  }
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}

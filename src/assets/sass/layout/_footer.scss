@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.site-footer {
+  background-color: #eeecec;
+  
+  ul {
+    padding:0;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right:3em;
+  }
+
+  a {
+    color:#777;
+
+    &:hover {
+      color:#111;
+    }
+  }
+}
